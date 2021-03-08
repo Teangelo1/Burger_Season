@@ -1,4 +1,40 @@
-li {
+h1 {
+  text-align: center;
+  font-family: 'Bungee-Inline', cursive;
+  font-size: 65px;
+  /* animation: rotation 8s infinite linear; */
+  font-size: 72px;
+  background: -webkit-linear-gradient(orange, black);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#logo {
+  animation: rotation 8s infinite linear;
+  
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+img {
+
+  width: 200px;
+}
+
+#you-did-not {
+  text-align: right;
+}
+
+
+
+
+/* li {
     padding: 5px;
     margin: 5px;
     background: #faebd7;
@@ -16,5 +52,5 @@ li {
   
   .form-group {
     margin-bottom: 5px;
-  }
+  } */
   
