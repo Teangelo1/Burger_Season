@@ -1,6 +1,11 @@
+body {
+  background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);
+
+}
+
 h1 {
   text-align: center;
-  font-family: 'Bungee-Inline', cursive;
+  font-family: 'Big Shoulders Stencil Display', cursive;
   font-size: 65px;
   /* animation: rotation 8s infinite linear; */
   font-size: 72px;
@@ -9,7 +14,15 @@ h1 {
   -webkit-text-fill-color: transparent;
 }
 
+h2 {
+  font-family: 'Big Shoulders Stencil Display', cursive;
+  background: -webkit-linear-gradient(orange, black);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 #logo {
+  width: 100px;
   animation: rotation 8s infinite linear;
   
 }
@@ -22,13 +35,20 @@ h1 {
     transform: rotate(360deg);
   }
 }
-img {
 
-  width: 200px;
+#buildburger {
+  text-align: center;
 }
-
-#you-did-not {
+/* #you-did-not {
   text-align: right;
+} */
+
+label {
+  font-size: 20px;;
+  font-family: 'Big Shoulders Stencil Display', cursive;
+  background: -webkit-linear-gradient(orange, black);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 
@@ -50,7 +70,8 @@ img {
     background: aqua;
   }
   
-  .form-group {
+  */
+   .form-group {
+    display: flex;
     margin-bottom: 5px;
-  } */
-  
+  }
