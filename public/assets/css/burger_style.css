@@ -1,3 +1,7 @@
+* {
+  font-family: 'Big Shoulders Stencil Display', cursive;
+}
+
 body {
   background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);
 
@@ -41,15 +45,6 @@ h2 {
 }
 
 
- /* #you-did-not {
-  text-align: right;
-}  */
-
-/* #devour-ul {
-  float: right;
-  
-} */
-
 label {
   font-size: 20px;;
   font-family: 'Big Shoulders Stencil Display', cursive;
@@ -62,23 +57,20 @@ label {
   text-align: center;
 }
 
+#add-button {
+ margin: 10px;
+ background: -webkit-linear-gradient(orange, black, blue);
+ color: orange;
+ font-family: 'Big Shoulders Stencil Display', cursive;;
+}
 
+.change-devoured {
+  margin: 10px;
+ background: -webkit-linear-gradient(orange, black, blue);
+ color: orange;
+ font-family: 'Big Shoulders Stencil Display', cursive;;
+}
 
-/* li {
-    padding: 5px;
-    margin: 5px;
-    background: #faebd7;
-  }
-  
-  .label {
-    font-weight: bold;
-  }
-  
-  .create-update-form {
-    padding: 5px;
-    margin: 5px;
-    background: aqua;
-  }
-  
-  */
-  
+li {
+  color: white;
+}
