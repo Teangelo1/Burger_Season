@@ -11,7 +11,7 @@
   <div class="form-group">
     <label for="devoured"></label><br>
     <input type="radio" name="devoured" value="1" id="devoured" checked> Devoured!<br>
-    <input type="radio" name="devoured" value="0" id="devour"> Not Devoured
+    {{!-- <input type="radio" name="devoured" value="0" id="devour"> Not Devoured --}}
   </div>
 
   <button type="submit"> Add Burger </button>
@@ -29,7 +29,7 @@
 
 <h2 id="you-did-not">You did not devour these, yo</h2>
 
-<ul>
+<ul id="devour-ul">
   {{#each burgers}}
   {{#if devoured}}
   {{> burgers/burger-block devoured=false}}

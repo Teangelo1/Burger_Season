@@ -39,9 +39,16 @@ h2 {
 #buildburger {
   text-align: center;
 }
-/* #you-did-not {
+
+
+ #you-did-not {
   text-align: right;
-} */
+} 
+
+#devour-ul {
+  float: right;
+  
+}
 
 label {
   font-size: 20px;;
@@ -51,6 +58,9 @@ label {
   -webkit-text-fill-color: transparent;
 }
 
+#create-form {
+  text-align: center;
+}
 
 
 
@@ -71,7 +81,4 @@ label {
   }
   
   */
-   .form-group {
-    display: flex;
-    margin-bottom: 5px;
-  }
+  
