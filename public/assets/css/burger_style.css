@@ -41,14 +41,14 @@ h2 {
 }
 
 
- #you-did-not {
+ /* #you-did-not {
   text-align: right;
-} 
+}  */
 
-#devour-ul {
+/* #devour-ul {
   float: right;
   
-}
+} */
 
 label {
   font-size: 20px;;
