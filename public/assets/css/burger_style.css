@@ -23,6 +23,7 @@ h2 {
   background: -webkit-linear-gradient(orange, black);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  text-align: center;
 }
 
 #logo {
@@ -73,4 +74,8 @@ label {
 
 li {
   color: white;
+}
+
+.row {
+  margin-top: 20px;
 }

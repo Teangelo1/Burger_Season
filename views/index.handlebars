@@ -1,35 +1,44 @@
 <h1><img id="logo" src="/assets/images/images.png" alt="logo" />Fiyah Burger<img id="logo"
     src="/assets/images/images.png" alt="logo" /></h1>
 
-  <h2 id="buildburger">Build a Burger</h2>
-  <form id="create-form">
+<h2 id="buildburger">Build a Burger</h2>
+<form id="create-form">
 
-    <div class="form-group">
-      <label for="ca">Burger Name:</label>
-      <input type="text" id="ca" name="name">
+  <div class="form-group">
+    <label for="ca">Burger Name:</label>
+    <input type="text" id="ca" name="name">
+  </div>
+
+  <button id="add-button" type="submit"> Add Burger </button>
+</form>
+
+<div class="container">
+  <div class="row">
+    <div class="col-6">
+      <h2>Burgers you devoured</h2>
+      <ol>
+        {{#each burgers}}
+        {{#unless devoured}}
+        {{> burgers/burger-block devoured=true}}
+        {{/unless}}
+        {{/each}}
+      </ol>
     </div>
 
-    <button id="add-button" type="submit"> Add Burger </button>
-  </form>
 
+    <div class="col-6">
+      <h2 id="you-did-not">You did not devour these, yo</h2>
+      <ol id="devour-ul">
+        <div class="">
+          {{#each burgers}}
+          {{#if devoured}}
+          {{> burgers/burger-block devoured=false}}
+          {{/if}}
+          {{/each}}
+      </ol>
 
-  <h2>Burgers you devoured</h2>
+    </div>
 
+  </div>
 
-  <ol>
-    {{#each burgers}}
-    {{#unless devoured}}
-    {{> burgers/burger-block devoured=true}}
-    {{/unless}}
-    {{/each}}
-  </ol>
-
-  <h2 id="you-did-not">You did not devour these, yo</h2>
-  <ol id="devour-ul">
-    <div class="">
-      {{#each burgers}}
-      {{#if devoured}}
-      {{> burgers/burger-block devoured=false}}
-      {{/if}}
-      {{/each}}
-  </ol>
+</div>
